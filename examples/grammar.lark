@@ -1,0 +1,16 @@
+start : expr
+
+?expr : term
+      | expr "+" term   -> add
+      | expr "-" term   -> sub
+
+?term : factor
+      | term "*" factor  -> mul
+
+?factor : NUMBER         -> number
+        | "(" expr ")"
+
+
+%ignore WS_INLINE
+%import common.NUMBER
+%import common.WS_INLINE
