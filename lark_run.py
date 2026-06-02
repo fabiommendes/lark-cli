@@ -105,7 +105,7 @@ def main(
     ] = "start",
 ) -> None:
     """
-    The main entry point for the Lark CLI. This function will be called when the user runs the `lark` command without any subcommands.
+    Test Lark grammar against examples or interactively.
     """
     if parser not in ("earley", "lalr", "cyk", None):
         msg = f"[bold red]Error:[/] Invalid parser {parser}. Must be one of 'earley', 'lalr', 'cyk', or 'auto'."

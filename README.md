@@ -1,29 +1,29 @@
-# Lark CLI
+# Lark Run
 
 A simple command-line interface for Lark, the parsing Library.
 
 
 ## Installation
 
-You can install Lark CLI using pip:
+You can install Lark Run using pip:
 
 ```bash
-pip install lark-cli
+pip install lark-run
 ```
 
 Or let uv or pipx handle it for you:
 
 ```bash
-uvx lark-cli YOUR_FILE.lark  # install automatically in the background
+uvx lark-run YOUR_FILE.lark  # install automatically in the background
 ```
 
 # Usage
 
-To use Lark CLI, simply run the command followed by the path to your Lark
+To use Lark Run, simply run the command followed by the path to your Lark
 grammar file:
 
 ```bash
-lark YOUR_FILE.lark
+lark-run YOUR_FILE.lark
 ```
 
 This will open a REPL where you can enter strings to be parsed according to the
@@ -34,7 +34,7 @@ You can also specify a test input file containing strings that should be
 accepted or rejected by the grammar:
 
 ```bash
-lark YOUR_FILE.lark -t TEST_INPUTS.yaml
+lark-run YOUR_FILE.lark -t TEST_INPUTS.yaml
 ```
 
 It expects a YAML or JSON file with the following structure:
