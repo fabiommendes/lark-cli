@@ -1,3 +1,13 @@
+#!/usr/bin/env -S uv run --script
+# /// script
+# dependencies = [
+#   "lark-parser>=0.12.0",
+#   "pyyaml>=6.0.3",
+#   "rich>=15.0.0",
+#   "typer>=0.26.6",
+# ]
+# ///
+
 import sys
 from functools import wraps
 from pathlib import Path
